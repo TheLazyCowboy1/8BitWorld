@@ -1,0 +1,12 @@
+{
+  "id": "LazyCowboy.8BitWorld",
+  "name": "8-Bit World",
+  "version": "0.0.1",
+  "target_game_version": "v1.10",
+  "authors": "LazyCowboy",
+  "description": "My eyes... help!<LINE><LINE>Also has options for 4-Bit World, 12-Bit World, 16-Bit World, 20-Bit World, 24-Bit World, 28-Bit World, and 32-Bit World (so basically normal???).",
+  "requirements": [],
+  "requirements_names": [],
+  "tags": ["Cosmetics", "Base", "Downpour", "Watcher"],
+  "checksum_override_version": false
+}
