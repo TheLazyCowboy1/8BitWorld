@@ -97,7 +97,7 @@ public partial class Plugin : BaseUnityPlugin
             MachineConnector.SetRegisteredOI(MOD_ID, Options);
             IsInit = true;
 
-            Logger.LogDebug("Applied hooks");
+            Logger.LogDebug("Applied shaders");
         }
         catch (Exception ex)
         {
@@ -110,7 +110,7 @@ public partial class Plugin : BaseUnityPlugin
     {
         private void Update()
         {
-            Shader.SetGlobalInt(ShaderBitMaskRef, Int32.MaxValue ^ (255 >> Options.Bits.Value)); //0b11111...111 EXCEPT (0b11111111 shifted down)
+            Shader.SetGlobalInt(ShaderBitMaskRef, 4095 << (8 - Options.Bits.Value));
             Shader.SetGlobalFloat(ShaderBrightnessRef, Options.Brightness.Value);
         }
 
